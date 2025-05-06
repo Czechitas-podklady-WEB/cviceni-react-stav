@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './hamburger.css';
 
 /*
@@ -10,14 +11,17 @@ Zadání 4: Pokud je menu zavřené nechte mu jen třídu `hamburger`. Pro otev�
 */
 
 export const Uloha5 = () => {
+  const [open, setOpen] = useState(false)
+
   return (
     <div className='menu'>
-      <button className="hamburger" aria-label="menu">
+      <button className={open ? "hamburger hamburger--otevrene" : "hamburger"} aria-label="menu" onClick={() => setOpen(!open)}>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul>
+      {open &&
+        <ul>
         <li>
           <a href="#o-nas">O nás</a>
         </li>
@@ -31,6 +35,7 @@ export const Uloha5 = () => {
           <a href="#cenik">Ceník</a>
         </li>
       </ul>
+    }
     </div>
   );
 };
