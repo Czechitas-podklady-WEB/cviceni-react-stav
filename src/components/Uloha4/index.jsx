@@ -14,11 +14,11 @@ Bonus: Pozor na krajní hodnoty. Pokud dojdete na konec nebo začátek pole, tak
 
 /*
   Adresy obrázků:
-  https://source.unsplash.com/WLUHO9A_xik/880x500
-  https://source.unsplash.com/DA1eGglMmlg/880x500
-  https://source.unsplash.com/kTxL6le0Wgk/880x500
-  https://source.unsplash.com/7go5UASxmDY/880x500
-  https://source.unsplash.com/YmATDIFsCmQ/880x500
+  /assets/WLUHO9A_xik.jpg
+  /assets/DA1eGglMmlg.jpg
+  /assets/kTxL6le0Wgk.jpg
+  /assets/7go5UASxmDY.jpg
+  /assets/YmATDIFsCmQ.jpg
 */
 
 export const Uloha4 = () => {
